@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --fc-header: #4ee79e;
+    --fc-paragraph: #c8dce2;
+    --bc-dice: #4eec9d;
+    --bc--dice-hover: #53ffab;
+    
+    font-size: 62.5%;
+}
+
+body {
+    display: grid;
+    place-content: center;
+    background-color: #202632;
+    height: 100vh;
+    font-size: 1.6rem;
+    gap: 3rem;
+}
+
+main {
+    background-color: #313a49;
+    display: flex;
+    flex-direction: column;
+    width: 32rem;
+    padding: 2rem;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 1rem;
+    gap: 1.6rem;
+}
+
+main h1 {
+    color: var(--fc-header);
+    font-size: .7rem;
+    letter-spacing: .3rem;
+}
+
+main p {
+    color: var(--fc-paragraph);
+}
+
+button {
+width: 4rem;
+height: 4rem;
+margin: 0 auto -4rem;
+border-radius: 50%;
+background-color: var(--bc-dice);
+display: grid;
+place-content: center;
+border: none;
+transition: .7s;
+}
+
+.dice {
+    width: 1.5rem;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--bc--dice-hover);
+    -webkit-box-shadow: 0px 0px 35px -5px var(--bc--dice-hover);
+    -moz-box-shadow: 0px 0px 35px -5px var(--bc--dice-hover);
+    box-shadow: 0px 0px 35px -5px var(--bc--dice-hover);
+}
